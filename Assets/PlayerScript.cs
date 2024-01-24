@@ -18,7 +18,7 @@ public class PlayerScript : MonoBehaviour
 
         if (Input.GetKey("w"))
         {
-            rb.AddForce(0, 100 * Time.deltaTime, 500 * Time.deltaTime);
+            rb.AddForce(0, 0, 500 * Time.deltaTime);
         }
 
         if (Input.GetKey("s"))

@@ -11,13 +11,14 @@ public class Hitbox : MonoBehaviour
 
     void OnCollisionEnter(Collision collisionInfo)
     {
-        if (entityStats.health <= 0)
-        {
-            player.enabled = false;
-        }
         if (collisionInfo.collider.tag == target)
         {
             entityStats.health -= 25;
+        }
+
+        if (entityStats.health <= 0)
+        {
+            player.enabled = false;
         }
     }
 }
